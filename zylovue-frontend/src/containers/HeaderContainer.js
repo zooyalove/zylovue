@@ -15,6 +15,7 @@ class HeaderContainer extends Component {
                 <Logo />
                 <Clock />
                 <ViewMode />
+                {/* <div style={{'border-left':'1px solid gray', 'border-right':'1px solid lightgray'}}></div> */}
                 <CloseButton />
             </HeaderBar>
         );
