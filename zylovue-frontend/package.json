@@ -51,6 +51,7 @@
   },
   "scripts": {
     "start": "NODE_PATH=src node scripts/start.js",
+    "start:win": "cross-env NODE_PATH=src node scripts/start.js",
     "build": "NODE_PATH=src node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom"
   },
