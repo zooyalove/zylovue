@@ -9,15 +9,18 @@ module.exports = (function() {
 
     return {
         connect () {
-            mongoose.connect(mongoUri, {
-                useMongoClient: true
-            }).then(
-                () => {
-                    console.log('Successfully connected to mongodb');
-                }
-            ).catch( e => {
-                console.error(e);
-            });
+            mongoose
+                .connect(mongoUri, {
+                    useMongoClient: true
+                })
+                .then(
+                    () => {
+                        console.log('Successfully connected to mongodb');
+                    }
+                )
+                .catch( e => {
+                    console.error(e);
+                });
         }
     };
 })();
